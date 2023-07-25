@@ -9,6 +9,6 @@ Problem|solution|code
 
 
 # Dynamic programming
+Problem|solution|code
 --|--|--
 [Dice Combinations](https://cses.fi/problemset/task/1633/)|dp[0]=1(when no dice is thrown). get i as sum from dp[i-diceNum] ways|[code](https://cses.fi/problemset/result/6599986/)
-[]
