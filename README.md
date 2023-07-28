@@ -17,5 +17,6 @@ Problem|solution|code
 [Coin Combinations II](https://cses.fi/problemset/task/1636/) | for unique combination traverse each coin once. dp[j]+=dp[j-coins[i]]|[code](https://cses.fi/problemset/result/6607947/)
 [Removing digits](https://cses.fi/problemset/task/1637)|always remove max digit|[code](https://cses.fi/problemset/result/6608062/)
 [Grid Paths](https://cses.fi/problemset/task/1638)|dp[i][j]=dp[i-1][j]+dp[i][j-1]|[code](https://cses.fi/problemset/result/6608226/)
-[]
-
+[Book Shop](https://cses.fi/problemset/task/1158)|0-1 knapsack, dp[i][cost]=max(dp[i-1][cost],dp[i-1][cost-c[i]])|[code](https://cses.fi/problemset/result/6618408/)
+[Array Description](https://cses.fi/problemset/task/1746) | if arr[i]=0 new dp[i]=previous dp[i-1]+dp[i]+dp[i+1] else rest dp[i]=0|[code](https://cses.fi/problemset/result/6622730/)
+[Counting Towers](https://cses.fi/problemset/task/2413)|for (n,n-1) sub-block it can be considered as 2X2 block which has 8 possible solution.there can be 4 states where transition is from vertical line block -> no line block,vertical line-> vertical line, no line->vertical line, no line-> no line. dp[i][0]=((dp[i-1][0]<<1)+dp[i-1][1])%mod , dp[i][1]=((dp[i-1][1]<<2)+dp[i-1][0])%mod |[code](https://cses.fi/problemset/result/6623117/)
