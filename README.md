@@ -30,3 +30,14 @@ Problem|solution|code
 [Elevator Rides](https://cses.fi/problemset/task/1653)| bitmask dp, if dp[100101] is to be calculated then it is result of dp[000101], dp[100001] and dp[1000100]. traverse from 0 to pow(2,n) and larger subset dp can be calculated by removing each bits at a time as subproblems solution is known then the dp can be computed.Here we have to find number of minimum rides for all the people and how much total weight is in the last ride. dp[subsequence]={rides,min_weight at last ride} is calculated by going through each subset from smaller to higher . dp[0]={1,0} , for no people in lift total rides is least 1 and last ride weight in lift is 0 this is the base case.|[code](https://cses.fi/paste/47715dab16859bd865cef9/)
 [Counting Tilings](https://cses.fi/problemset/task/2181/)|Thinking brute force way , first find total number of ways to tile first column , then 2nd column and so on.previous Tile can be represented as binary number of max length 10. each valid binary tiling way is find out taking previous tiling way into  consideration. [tiling way for particular column] +=[tiling way for previous column] because if a particular column can be tiled in a way then it has some horizontal tiles then for next column tiles can be placed in only some position then all possible ways of tiling for those positions is found out.At the end we get the answer|[code](https://cses.fi/paste/3055a567d6ac2d85660591/)
 [counting numbers](https://cses.fi/problemset/task/2220)|Always apply reccurence solution for digit dynamic programming first , index of array and tight is always there for every digit dp. then other constrainst like sum or previous digit or leading zeros can be added to parameters . if tight is true traversal is bounded till that fixed digit in the number otherwise traversal  is till 9, then recursively solve the problem.convert it to dp & initially all dp states is -1 |[code](https://cses.fi/paste/b245238f42728c9e65f592/)
+
+
+# Graphs
+Problem|solution|code
+--|--|--
+[Counting Rooms](https://cses.fi/problemset/task/1192)|simple dfs|[code](https://cses.fi/problemset/result/6686876/)
+[Labyrinth](https://cses.fi/problemset/task/1193)|track previous path visited (bfs)|[code](https://cses.fi/paste/12f26954efdf021166265a/)
+[Building Roads](https://cses.fi/problemset/task/1666)|connect one node from  each non connected sets of graph|[code](https://cses.fi/paste/8718d4c0654b5be9662ea2/)
+[Message Route](https://cses.fi/problemset/task/1667)|Store previous node info while bfs|[code](https://cses.fi/paste/971f0de8610c3b856640b3/)
+[Round Trip](https://cses.fi/problemset/task/1669)|here we have to find the loop in the undirected graph. Store previous node info(parent) using node and print the loop elements.| [code](https://cses.fi/paste/801370f1f83b034f66ccd0/)
+ 
