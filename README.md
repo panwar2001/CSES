@@ -42,4 +42,7 @@ Problem|solution|code
 [Round Trip](https://cses.fi/problemset/task/1669)|here we have to find the loop in the undirected graph. Store previous node info(parent) using node and print the loop elements.| [code](https://cses.fi/paste/801370f1f83b034f66ccd0/)
 [Monsters](https://cses.fi/problemset/task/1194)|its simple bfs, first process all monsters then player, use simple visited matrix & track previous path followed.|[code](https://cses.fi/paste/d297ff8fa88e0fd666dcf9/)
 [Shortest Routes I](https://cses.fi/problemset/task/1671)|Simple dijkstra, but two citys  can have different distance in between them, so process only city's paht that can reach us to another city with bare min distance.|[code](https://cses.fi/paste/17e210f0b4761c0966e415/)
- 
+[Shortest Routes II](https://cses.fi/problemset/task/1672)|it's floyd warshall algorithm , for each intermediate city compute shortest distance between two cities.|[code](https://cses.fi/paste/02eb22e3b515ad5466fff5/)
+[High Score](https://cses.fi/problemset/task/1673)|mark those nodes that can be visited by starting node ( here starting node is 1).It can have positive cycle which can increase score when cycle is visited again and again to track this cycle bellman ford is applied on nodes which are marked initially. once bellman ford is applied store the score of destination node  and reapply bellman ford on nodes which are marked initially and make new distance as infinite because there will be cycle and positive cycles add upto infinite , at end of this bellmand ford algorithm the end node or destination node may change if the positive cycle affected it's score. if it affects then return -1 else display score.|[code](https://cses.fi/paste/e6b5aaeb18c379366707e5/)
+
+
